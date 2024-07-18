@@ -1,2 +1,2 @@
-# x-o
+# o-x
 > Just a simple game.
