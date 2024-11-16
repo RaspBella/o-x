@@ -1,2 +1,10 @@
-ox: main.c
-	gcc -Wall -Werror -ggdb3 main.c -o ox
+CFLAGS=-Wall -Wextra -pedantic
+CC=cc
+BIN=ox
+SRC=main.c
+
+${BIN}: ${SRC}
+	${CC} ${CFLAGS} $^ -o $@
+
+clean:
+	rm ${BIN}
